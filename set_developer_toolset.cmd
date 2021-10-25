@@ -6,7 +6,7 @@ set ARCH=x64
 set ROOT=%USERPROFILE%\dev
 
 echo cygwin64
-set PATH=c:\cygwin64\bin;%PATH%
+set PATH=%ROOT%\cygwin64\bin;%PATH%
 
 echo java
 set JAVA_HOME=%ROOT%\AdoptOpenJDK\jdk-11
@@ -39,3 +39,6 @@ set NODE_HOME=%ROOT%\nodejs\12
 set PATH=%NODE_HOME%;%PATH%
 
 node --version
+
+
+%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
