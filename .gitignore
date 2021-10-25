@@ -1,1 +1,7 @@
 *.7z
+AdoptOpenJDK
+bazel
+CMake
+cygwin64
+harbour
+Python
