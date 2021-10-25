@@ -1,13 +1,17 @@
 @ECHO OFF
 
 REM set ARCH=x64
+REM echo %1
 
-echo %1
+set PATH=c:\windows;c:\windows\system32;C:\Windows\System32\OpenSSH
+set PATH=%PATH%;C:\Program Files\Git\cmd
+set PATH=%PATH%;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps
+set PATH=%PATH%;%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin
 
 if '%1'=='' (
     set ARCH=x64
 ) else (
-     set ARCH=x86
+     set ARCH=%1
 )
 
 IF NOT EXIST c:\Python (
@@ -27,7 +31,7 @@ echo ARCH=%ARCH%
 set ROOT=%USERPROFILE%\dev
 
 echo cygwin64
-set PATH=%ROOT%\cygwin64\bin;%PATH%
+set PATH=%PATH%;%ROOT%\cygwin64\bin
 
 goto :%ARCH%
 
