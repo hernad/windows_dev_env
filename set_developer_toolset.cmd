@@ -64,6 +64,8 @@ goto :%ARCH%
 
     node --version
     java -version
+
+    set PATH=%USERPROFILE%\dev\bin;%PATH%
     %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
     goto :eof
 
@@ -95,6 +97,8 @@ goto :%ARCH%
     set NODE_HOME=%ROOT%\nodejs\12-32
     set PATH=%NODE_HOME%;%PATH%
 
+    set PATH=%USERPROFILE%\dev\bin;%PATH%
+    
     node --version
     java -version
     %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars32.bat"
