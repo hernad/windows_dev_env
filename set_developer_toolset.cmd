@@ -7,6 +7,7 @@ set PATH=c:\windows;c:\windows\system32;C:\Windows\System32\OpenSSH
 set PATH=%PATH%;C:\Program Files\Git\cmd
 set PATH=%PATH%;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps
 set PATH=%PATH%;%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin
+set PATH=%PATH%;C:\Program Files\Docker\Docker\resources\bin
 
 if '%1'=='' (
     set ARCH=x64
